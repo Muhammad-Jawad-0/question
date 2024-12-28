@@ -48,15 +48,40 @@
 
 // ============ 4. Sum of an Array
 
-function sumArray(arr) {
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        sum += arr[i]
-    }
-    console.log(sum)
+// function sumArray(arr) {
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i]
+//     }
+//     console.log(sum)
+// }
+
+
+// let arr = [12, 41, 5, 3, 9, 8 , 22,1];
+
+// sumArray(arr)
+
+// ============ 5. checkOddEven
+
+
+// function checkOddEven(number) {
+//     if(number % 2 === 0){
+//         return "even number"
+//     } else{
+//         return "odd number"
+//     }
+// }
+// console.log(checkOddEven(9)); 
+
+// ============ 6. findMissingNumber
+
+function findMissingNumber(arr) {
+    let n = arr.length + 1;
+    let totalSum = (n * (n + 1)) / 2;
+    let actualSum = 0
+
+    
+
 }
-
-
-let arr = [12, 41, 5, 3, 9, 8 , 22,1];
-
-sumArray(arr)
+let numbers = [1, 2, 3, 4, 6, 7, 8, 9, 10];
+console.log(findMissingNumber(numbers));
