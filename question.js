@@ -75,13 +75,45 @@
 
 // ============ 6. findMissingNumber
 
-function findMissingNumber(arr) {
-    let totalSum = ((arr.length + 1) * (arr.length + 2)) / 2;
+// function findMissingNumber(arr) {
+//     let totalSum = ((arr.length + 1) * (arr.length + 2)) / 2;
 
-    for (let i = 0; i < arr.length; i++) {
-        totalSum = totalSum - arr[i]
+//     for (let i = 0; i < arr.length; i++) {
+//         totalSum = totalSum - arr[i]
+//     }
+//     return totalSum
+// }
+// let numbers = [1, 2, 3, 4, 6, 7, 8, 5, 10];
+// console.log(findMissingNumber(numbers));
+
+// ============ 7. checkNumberType
+
+// function checkNumberType(number) {
+
+//     switch (true) {
+//         case number < 0:
+//             console.log("Number is Negative")
+//             break;
+//         case number > 0:
+//             console.log("Number is Positive");
+//             break
+//         case number === 0:
+//             console.log("Number is Zero");
+//             break;
+//     }
+// }
+// checkNumberType(1)
+
+
+// ============ 8. reverseString
+
+function reverseString(str) {
+    let reverseString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverseString += str[i]
     }
-    return totalSum
+    return reverseString
 }
-let numbers = [1, 2, 3, 4, 6, 7, 8, 5, 10];
-console.log(findMissingNumber(numbers));
+
+console.log(reverseString("hello"));
+console.log(reverseString("world"));
