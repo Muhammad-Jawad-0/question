@@ -136,33 +136,33 @@
 
 // // ============ 10. findMaxMin
 
-function findMaxMin(arr) {
-    if (arr.length === 0) {
-        console.log("Array is empty")
-        return
-    }
-    let max = arr[0];
-    let min = arr[0];
+// function findMaxMin(arr) {
+//     if (arr.length === 0) {
+//         console.log("Array is empty")
+//         return
+//     }
+//     let max = arr[0];
+//     let min = arr[0];
 
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i]
-        }
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i]
+//         }
 
-        if (arr[i] < min) {
-            min = arr[i]
-        }
-    }
-    console.log("max >>>", max, "min >>>", min);
-}
-findMaxMin([1, 5, 3, 9, 2, -9]);
+//         if (arr[i] < min) {
+//             min = arr[i]
+//         }
+//     }
+//     console.log("max >>>", max, "min >>>", min);
+// }
+// findMaxMin([1, 5, 3, 9, 2, -9]);
 
 
 // // ============ 11. findFactors
 
-// function findFactors(number) {
-//     // Logic yahan likho
-// }
+function findFactors(number) {
+    // Logic yahan likho
+}
 
-// console.log(findFactors(12));  // Output: [1, 2, 3, 4, 6, 12]
-// console.log(findFactors(7));   // Output: [1, 7]
+console.log(findFactors(12));  // Output: [1, 2, 3, 4, 6, 12]
+console.log(findFactors(7));   // Output: [1, 7]
