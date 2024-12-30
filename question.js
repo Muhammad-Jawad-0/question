@@ -120,21 +120,19 @@
 
 // ============ 9. isPalindrome
 
-function isPalindrome(str) {
+// function isPalindrome(str) {
+//     let normalizedStr = str.toLowerCase()
+//     let reverseStr = normalizedStr.split("").reverse().join("")
+//     if (str.trim() === "") {
+//         return "please enter a valid string"
+//     } else if (normalizedStr === reverseStr) {
+//         return "yes It's palindrome"
+//     } else {
+//         return "it's not a palindrome"
+//     }
+// }
 
-    let reverseStr = str.split("").reverse().join("")
-    if (str.trim() === "") {
-        return "please enter a valid string"
-    } else if (str === reverseStr) {
-        return "yes It's palindrome"
-    } else {
-        return "it's not a palindrome"
-    }
-}
-
-console.log(isPalindrome("a"));
-console.log(isPalindrome("hello"));
-console.log(isPalindrome("madam"));
+// console.log(isPalindrome("Madam"));
 
 // // ============ 10. findMaxMin
 
