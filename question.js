@@ -107,13 +107,48 @@
 
 // ============ 8. reverseString
 
-function reverseString(str) {
-    let reverseString = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        reverseString += str[i]
+// function reverseString(str) {
+//     let reverseString = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         reverseString += str[i]
+//     }
+//     return reverseString
+// }
+
+// console.log(reverseString("hello"));
+// console.log(reverseString("world"));
+
+// ============ 9. isPalindrome
+
+function isPalindrome(str) {
+
+    let reverseStr = str.split("").reverse().join("")
+    if (str.trim() === "") {
+        return "please enter a valid string"
+    } else if (str === reverseStr) {
+        return "yes It's palindrome"
+    } else {
+        return "it's not a palindrome"
     }
-    return reverseString
 }
 
-console.log(reverseString("hello"));
-console.log(reverseString("world"));
+console.log(isPalindrome("a"));
+console.log(isPalindrome("hello"));
+console.log(isPalindrome("madam"));
+
+// // ============ 10. findMaxMin
+
+// function findMaxMin(arr) {
+//     // Logic yahan likho
+// }
+
+// console.log(findMaxMin([1, 5, 3, 9, 2]));  // Output: { max: 9, min: 1 }
+
+// // ============ 11. findFactors
+
+// function findFactors(number) {
+//     // Logic yahan likho
+// }
+
+// console.log(findFactors(12));  // Output: [1, 2, 3, 4, 6, 12]
+// console.log(findFactors(7));   // Output: [1, 7]
