@@ -161,8 +161,16 @@
 // // ============ 11. findFactors
 
 function findFactors(number) {
-    // Logic yahan likho
+let factors = [];
+for (let i = 1; i <= number; i++) {
+    if (number % i === 0) {
+        factors.push(i);
+
+    }
+}
+return factors
 }
 
 console.log(findFactors(12));  // Output: [1, 2, 3, 4, 6, 12]
 console.log(findFactors(7));   // Output: [1, 7]
+
