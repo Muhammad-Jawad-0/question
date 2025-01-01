@@ -174,3 +174,18 @@
 // console.log(findFactors(12));  // Output: [1, 2, 3, 4, 6, 12]
 // console.log(findFactors(7));   // Output: [1, 7]
 
+// ============ 12. addTwoNumbers
+
+
+const addTwoNumbers = (num1, num2) => {
+    let sum = 0;
+    if (typeof num1 === "number" && typeof num2 === "number") {
+        sum += num1 + num2
+    } else {
+        return "Invalid"
+    }
+    return sum
+}
+
+
+console.log(addTwoNumbers(5, 90));
