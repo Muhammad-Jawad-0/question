@@ -37,6 +37,15 @@ const findFactorial = (num) => {
     }
 }
 
-let res = findFactorial("5")
+let res = findFactorial(5)
 
 console.log(res);
+
+
+// 3. Reverse a String
+
+// 4. Check Prime Number
+
+// 5. Find the Largest Number
+
+// 6. Fibonacci Series
