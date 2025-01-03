@@ -60,22 +60,38 @@
 
 // 4. Check Prime Number
 
-const primeNumber = (num) => {
-    if (num <= 1) {
-        return "Negative or One number is not a prime number"
-    }
+// let cheakPrimeNumber = (num) => {
+//     if (num <= 1) {
+//         return `${num} please greater than 2`
+//     }
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) {
+//             return `${num} <<< No it's not a prime number`
+//         }
+//     }
 
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            return "it's not a prime number"
-        }
-    }
-    return "Yes it's a prime number"
-}
+//     return `${num} <<< Yes it's a prime number`
+// }
+
+// console.log(cheakPrimeNumber(2));
 
 
-let res = primeNumber(3);
-console.log(res);
+// const primeNumber = (num) => {
+//     if (num <= 1) {
+//         return "Negative or One number is not a prime number"
+//     }
+
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             return "it's not a prime number"
+//         }
+//     }
+//     return "Yes it's a prime number"
+// }
+
+
+// let res = primeNumber(3);
+// console.log(res);
 
 // 5. Find the Largest Number
 
