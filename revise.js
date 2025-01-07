@@ -95,4 +95,21 @@
 
 // 5. Find the Largest Number
 
+// const largestNumber = (arr) => {
+//     let max = arr[0];
+
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i]
+//         }
+//     }
+
+//     return max
+// }
+
+// let num = [1,32,44,2,100,599,51,1000]
+// let res = largestNumber(num)
+
+// console.log(res);
+
 // 6. Fibonacci Series
