@@ -113,3 +113,40 @@
 // console.log(res);
 
 // 6. Fibonacci Series
+
+// const fibonacciSeries = (num) => {
+//     let a = 0;
+//     let b = 1;
+//     let series = [a, b]
+
+
+//     for (let i = 2; i < num; i++) {
+//         let next = a + b;
+//         series.push(next)
+//         a = b;
+//         b = next
+//     }
+//     return series
+// }
+
+// let res = fibonacciSeries(10);
+// console.log(res);
+
+
+
+const fibonacciSeries = (n) => {
+    let a = 0;
+    let b = 1;
+    let series = [a, b]
+
+    for (let i = 2; i < n; i++) {
+        let next = a + b;
+        series.push(next)
+        a = b;
+        b = next
+    }
+
+    return series
+};
+
+console.log(fibonacciSeries(10));
