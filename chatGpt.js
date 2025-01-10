@@ -119,3 +119,24 @@
 
 // func(8);
 // console.log(value);
+
+
+const findUniquePairs = (arr, tar) => {
+    let pairs = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++){
+            if(arr[i] + arr[j] === tar){
+                pairs.push(arr[i], arr[j])
+            }
+        }
+    }
+
+    return pairs
+}
+
+let arr = [2, 4, 3, 7, 5, -1, 6];
+let target = 6;
+
+let res = findUniquePairs(arr, target);
+console.log(res);
