@@ -121,22 +121,48 @@
 // console.log(value);
 
 
-const findUniquePairs = (arr, tar) => {
-    let pairs = [];
+// const findUniquePairs = (arr, tar) => {
+//     let pairs = [];
 
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++){
-            if(arr[i] + arr[j] === tar){
-                pairs.push(arr[i], arr[j])
+//     for (let i = 0; i < arr.length; i++) {
+//         console.log("i loop");
+
+//         for (let j = i + 1; j < arr.length; j++){
+//             console.log("j loop");
+
+//             if(arr[i] + arr[j] === tar){
+//                 pairs.push(arr[i], arr[j])
+//             }
+//         }
+//     }
+
+//     return pairs
+// }
+
+// let arr = [2, 4, 3, 7, 5, -1, 6];
+// let target = 6;
+
+// let res = findUniquePairs(arr, target);
+// console.log(res);
+
+
+function findUniquePairs(array, target) {
+    let sumPair = [];
+
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[i] + array[j] === target) {
+                sumPair.push([array[i], array[j]])
             }
         }
     }
 
-    return pairs
+    return sumPair
 }
 
-let arr = [2, 4, 3, 7, 5, -1, 6];
+let arr = [2, 4, 3, 7, 5, -1, 6, 0];
 let target = 6;
 
-let res = findUniquePairs(arr, target);
-console.log(res);
+let result = findUniquePairs(arr, target);
+
+console.log(result);
