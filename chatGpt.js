@@ -146,21 +146,51 @@
 // console.log(res);
 
 
+// function findUniquePairs(array, target) {
+//     let sumPair = [];
+
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = i + 1; j < array.length; j++) {
+//             if (array[i] + array[j] === target) {
+//                 sumPair.push([array[i], array[j]])
+//             }
+//         }
+//     }
+
+//     return sumPair
+// }
+
+// let arr = [2, 4, 2, 3, 7, 5, -1, 6, 0];
+// let target = 6;
+
+// let result = findUniquePairs(arr, target);
+
+// console.log(result);
+
+// ----------- avoid duplicate piars ----------
+
+
+
 function findUniquePairs(array, target) {
     let sumPair = [];
+    let seen = new Set(); // To track already seen pairs
 
     for (let i = 0; i < array.length; i++) {
         for (let j = i + 1; j < array.length; j++) {
             if (array[i] + array[j] === target) {
-                sumPair.push([array[i], array[j]])
+                let pair = [array[i], array[j]].sort((a, b) => a - b).toString(); // Sort pair to avoid duplicates
+                if (!seen.has(pair)) {
+                    sumPair.push([array[i], array[j]]);
+                    seen.add(pair);
+                }
             }
         }
     }
 
-    return sumPair
+    return sumPair;
 }
 
-let arr = [2, 4, 3, 7, 5, -1, 6, 0];
+let arr = [2, 4, 2, 3, 7, 5, -1, 6, 0];
 let target = 6;
 
 let result = findUniquePairs(arr, target);
