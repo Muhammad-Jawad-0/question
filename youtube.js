@@ -31,22 +31,22 @@
 
 // -------------------
 
-const user = [
-  { name: "jawad", age: 20, role: "admin" },
-  { name: "asad", age: 25, role: "user" },
-  { name: "farrukh", age: 35, role: "admin" },
-  { name: "Ali", age: 35, role: "user" },
-];
+// const user = [
+//   { name: "jawad", age: 20, role: "admin" },
+//   { name: "asad", age: 25, role: "user" },
+//   { name: "farrukh", age: 35, role: "admin" },
+//   { name: "Ali", age: 35, role: "user" },
+// ];
 
-let obj = {};
+// let obj = {};
 
-user.forEach((user) => {
-  if (obj[user.role]) {
-    obj[user.role].push(user);
-  } else {
-    obj[user.role] = [];
-    obj[user.role].push(user);
-  }
-});
+// user.forEach((user) => {
+//   if (obj[user.role]) {
+//     obj[user.role].push(user);
+//   } else {
+//     obj[user.role] = [];
+//     obj[user.role].push(user);
+//   }
+// });
 
-console.log(obj);
+// console.log(obj);
